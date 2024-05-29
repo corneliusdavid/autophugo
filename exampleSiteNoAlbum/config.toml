@@ -3,15 +3,14 @@ baseurl = "http://example.org/"
 languageCode = "en-us"
 title = "AutoPhugo"
 theme = "autophugo"
-#googleAnalytics = ""
 disableKinds = ["taxonomy", "term"]
 #[taxonomies]
 #    tag = "tags"
 #    category = "categories"
 
-[Author]
-    name = "Karl Sickendick"
-    email = "kc0bfv@gmail.com"
+[services]
+    [services.googleAnalytics]
+        #ID = 'G-MEASUREMENT_ID'
 
 [params]
     # Meta
@@ -29,6 +28,10 @@ disableKinds = ["taxonomy", "term"]
     #images_downloadable = true
     #images_downloadable_use_orig = false
     #taxonomies_links = false
+
+    [params.author]
+    name = "Karl Sickendick"
+    email = "kc0bfv@gmail.com"
 
     # Headerbar links
     # Do not put too many links here,
